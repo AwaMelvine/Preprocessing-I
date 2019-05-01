@@ -211,5 +211,39 @@ body {
   line-height: 1.65rem;
 }
 .container .skills {
-  border: 1px solid red;
+  margin: 3rem auto 3rem;
+  padding-bottom: 2rem;
+  border-top: 2px dashed #3a4145;
+  border-bottom: 2px dashed #3a4145;
+}
+.container .skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container .skills div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.container .skills div article {
+  flex: 1;
+  margin: 0rem 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+}
+.container .skills div article .skill {
+  margin: 10px auto;
+  color: #3a4145;
+}
+.container .skills div article .skill-experience {
+  margin-bottom: 10px;
 }

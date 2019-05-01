@@ -1,1 +1,47 @@
 @import "reset.less";
+
+// colors
+@primaryTextColor: #3a4145;
+@lightGray: #e0e0e0;
+@grayBackground: #ebedee;
+
+// Borders
+@lightGrayBorder: 1px solid @lightGray;
+
+// max width for website
+@maxWithWebsite: 800px;
+
+// Navbar
+.navbar {
+  max-width: @maxWithWebsite;
+  margin: 0px auto;
+
+  .nav-menu {
+    display: flex;
+
+    li {
+      flex: 1;
+      border: @lightGrayBorder;
+      border-right: none;
+      text-align: center;
+
+      a {
+        font-size: 1.2rem;
+        display: block;
+        padding: 1.25rem 2rem;
+        text-decoration: none;
+        color: @primaryTextColor;
+
+        &:hover {
+          background: @lightGray;
+        }
+      }
+    }
+    li:first-child {
+      border-left: @lightGrayBorder;
+    }
+    li:last-child {
+      border-right: @lightGrayBorder;
+    }
+  }
+}

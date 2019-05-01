@@ -134,3 +134,32 @@ html,
 body {
   height: 100%;
 }
+.navbar {
+  max-width: 800px;
+  margin: 0px auto;
+}
+.navbar .nav-menu {
+  display: flex;
+}
+.navbar .nav-menu li {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-right: none;
+  text-align: center;
+}
+.navbar .nav-menu li a {
+  font-size: 1.2rem;
+  display: block;
+  padding: 1.25rem 2rem;
+  text-decoration: none;
+  color: #3a4145;
+}
+.navbar .nav-menu li a:hover {
+  background: #e0e0e0;
+}
+.navbar .nav-menu li:first-child {
+  border-left: 1px solid #e0e0e0;
+}
+.navbar .nav-menu li:last-child {
+  border-right: 1px solid #e0e0e0;
+}

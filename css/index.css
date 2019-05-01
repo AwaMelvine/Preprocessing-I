@@ -274,3 +274,42 @@ body {
 .container .work-history tr:hover {
   background-color: #f5f5f5;
 }
+.container .contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container .contact form {
+  padding: 0rem 4rem 3rem;
+  margin-bottom: 8rem;
+  font-size: 1.2rem;
+}
+.container .contact form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .contact form div {
+  margin-top: 0.9rem;
+}
+.container .contact form div label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.container .contact form div .text-input {
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #e0e0e0;
+}
+.container .contact form div .contact-btn {
+  font-size: 1.05rem;
+  padding: 0.9rem 1.3rem;
+  border: none;
+  background: #3b5998;
+  color: white;
+  float: right;
+  border-radius: 0.2rem;
+}

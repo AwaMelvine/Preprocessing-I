@@ -45,3 +45,65 @@
     }
   }
 }
+
+// CONTAINER SECTION
+.container {
+  max-width: @maxWithWebsite;
+  margin: 0px auto;
+
+  // Intro
+  .intro {
+    display: flex;
+    flex-direction: column;
+
+    .intro-image-wrapper {
+      display: flex;
+      flex-direction: row;
+
+      div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+          display: block;
+          height: 1px;
+          border: @lightGrayBorder;
+        }
+      }
+      .img-div {
+        flex: 1;
+        padding: 1.5rem;
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .intro-text {
+      text-align: center;
+
+      div {
+        width: 60%;
+        margin: 0px auto;
+        h1 {
+          font-size: 3rem;
+          font-weight: lighter;
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin: 0.6rem auto;
+          color: @primaryTextColor;
+        }
+        p {
+          font-size: 1.4rem;
+          line-height: 1.65rem;
+        }
+      }
+    }
+  }
+  //End Intro
+}

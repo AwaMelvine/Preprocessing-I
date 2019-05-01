@@ -138,8 +138,18 @@ body {
   max-width: 800px;
   margin: 0px auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
 .container .navbar .nav-menu {
   display: flex;
+}
+@media (max-width: 500px) {
+  .container .navbar .nav-menu {
+    flex-direction: column;
+  }
 }
 .container .navbar .nav-menu li {
   flex: 1;
@@ -241,6 +251,12 @@ body {
   width: 2.5rem;
   border-radius: 0.25rem;
   padding: 2.5rem;
+}
+@media (max-width: 500px) {
+  .container .skills div article {
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
 }
 .container .skills div article .skill {
   margin: 10px auto;

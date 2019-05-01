@@ -12,10 +12,18 @@
 
 // max width for website
 @maxWithWebsite: 800px;
+
+// breakpoints
+@mobileBreakpoint: 500px;
+
 // CONTAINER SECTION
 .container {
   max-width: @maxWithWebsite;
   margin: 0px auto;
+
+  @media (max-width: @mobileBreakpoint) {
+    max-width: 500px;
+  }
 
   // mixins
   .centralize_flex_items() {
@@ -39,6 +47,10 @@
   .navbar {
     .nav-menu {
       display: flex;
+
+      @media (max-width: @mobileBreakpoint) {
+        flex-direction: column;
+      }
 
       li {
         flex: 1;
@@ -145,8 +157,12 @@
         text-align: center;
         width: 2.5rem;
         border-radius: 0.25rem;
-
         padding: 2.5rem;
+
+        @media (max-width: @mobileBreakpoint) {
+          flex-direction: column;
+          margin-top: 0.5rem;
+        }
 
         .skill {
           margin: 10px auto;

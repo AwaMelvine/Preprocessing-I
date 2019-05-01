@@ -174,8 +174,9 @@ body {
 .container .intro .intro-image-wrapper div {
   flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 .container .intro .intro-image-wrapper div span {
   display: block;
@@ -202,19 +203,19 @@ body {
   font-weight: lighter;
 }
 .container .intro .intro-text div h3 {
+  color: #aaa;
+  font-style: italic;
   font-size: 1.5rem;
   margin: 0.6rem auto;
-  color: #3a4145;
 }
 .container .intro .intro-text div p {
   font-size: 1.4rem;
   line-height: 1.65rem;
 }
 .container .skills {
-  margin: 3rem auto 3rem;
-  padding-bottom: 2rem;
+  margin: 4rem auto;
+  padding: 4rem auto;
   border-top: 2px dashed #3a4145;
-  border-bottom: 2px dashed #3a4145;
 }
 .container .skills h2 {
   text-align: center;
@@ -230,27 +231,29 @@ body {
 }
 .container .skills div article {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
   margin: 0rem 1rem;
   border: 1px solid #e0e0e0;
   text-align: center;
   width: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border-radius: 0.25rem;
   padding: 2.5rem;
 }
 .container .skills div article .skill {
   margin: 10px auto;
-  color: #3a4145;
 }
 .container .skills div article .skill-experience {
   margin-bottom: 10px;
+  color: #aaa;
+  font-style: italic;
 }
 .container .work-history {
-  margin: 3rem auto 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 2px dashed #3a4145;
+  margin: 4rem auto;
+  padding: 4rem auto;
+  border-top: 2px dashed #3a4145;
 }
 .container .work-history h2 {
   text-align: center;
@@ -273,6 +276,11 @@ body {
 }
 .container .work-history tr:hover {
   background-color: #f5f5f5;
+}
+.container .contact {
+  margin: 4rem auto;
+  padding: 4rem auto;
+  border-top: 2px dashed #3a4145;
 }
 .container .contact h2 {
   text-align: center;

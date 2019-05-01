@@ -147,6 +147,9 @@
       .centralize_flex_items();
       width: 100%;
       margin-bottom: 2rem;
+      @media (max-width: @mobileBreakpoint) {
+        flex-direction: column;
+      }
 
       article {
         flex: 1;
@@ -160,8 +163,10 @@
         padding: 2.5rem;
 
         @media (max-width: @mobileBreakpoint) {
-          flex-direction: column;
-          margin-top: 0.5rem;
+          width: 100%;
+          display: block;
+          padding: 4rem;
+          margin-top: 1rem;
         }
 
         .skill {
@@ -220,6 +225,10 @@
       padding: 0rem 4rem 3rem;
       margin-bottom: 8rem;
       font-size: 1.2rem;
+
+      @media (max-width: @mobileBreakpoint) {
+        padding: 0.5rem;
+      }
 
       &::after {
         content: "";

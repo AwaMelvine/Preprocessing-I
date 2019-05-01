@@ -239,6 +239,11 @@ body {
   width: 100%;
   margin-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  .container .skills div {
+    flex-direction: column;
+  }
+}
 .container .skills div article {
   flex: 1;
   display: flex;
@@ -254,8 +259,10 @@ body {
 }
 @media (max-width: 500px) {
   .container .skills div article {
-    flex-direction: column;
-    margin-top: 0.5rem;
+    width: 100%;
+    display: block;
+    padding: 4rem;
+    margin-top: 1rem;
   }
 }
 .container .skills div article .skill {
@@ -307,6 +314,11 @@ body {
   padding: 0rem 4rem 3rem;
   margin-bottom: 8rem;
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .container .contact form {
+    padding: 0.5rem;
+  }
 }
 .container .contact form::after {
   content: "";

@@ -247,3 +247,30 @@ body {
 .container .skills div article .skill-experience {
   margin-bottom: 10px;
 }
+.container .work-history {
+  margin: 3rem auto 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed #3a4145;
+}
+.container .work-history h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container .work-history table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .work-history th {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.container .work-history th,
+.container .work-history td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.container .work-history tr:hover {
+  background-color: #f5f5f5;
+}

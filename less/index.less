@@ -10,46 +10,41 @@
 
 // max width for website
 @maxWithWebsite: 800px;
-
-// Navbar
-.navbar {
-  max-width: @maxWithWebsite;
-  margin: 0px auto;
-
-  .nav-menu {
-    display: flex;
-
-    li {
-      flex: 1;
-      border: @lightGrayBorder;
-      border-right: none;
-      text-align: center;
-
-      a {
-        font-size: 1.2rem;
-        display: block;
-        padding: 1.25rem 2rem;
-        text-decoration: none;
-        color: @primaryTextColor;
-
-        &:hover {
-          background: @lightGray;
-        }
-      }
-    }
-    li:first-child {
-      border-left: @lightGrayBorder;
-    }
-    li:last-child {
-      border-right: @lightGrayBorder;
-    }
-  }
-}
-
 // CONTAINER SECTION
 .container {
   max-width: @maxWithWebsite;
   margin: 0px auto;
+  // Navbar
+  .navbar {
+    .nav-menu {
+      display: flex;
+
+      li {
+        flex: 1;
+        border: @lightGrayBorder;
+        border-right: none;
+        text-align: center;
+
+        a {
+          font-size: 1.2rem;
+          display: block;
+          padding: 1.25rem 2rem;
+          text-decoration: none;
+          color: @primaryTextColor;
+
+          &:hover {
+            background: @lightGray;
+          }
+        }
+      }
+      li:first-child {
+        border-left: @lightGrayBorder;
+      }
+      li:last-child {
+        border-right: @lightGrayBorder;
+      }
+    }
+  }
 
   // Intro
   .intro {
@@ -104,6 +99,10 @@
         }
       }
     }
-  }
-  //End Intro
-}
+  } //End Intro
+
+  // Skills
+  .skills {
+    border: 1px solid red;
+  } //End Skills
+} //End Container

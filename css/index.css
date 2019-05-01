@@ -134,38 +134,34 @@ html,
 body {
   height: 100%;
 }
-.navbar {
+.container {
   max-width: 800px;
   margin: 0px auto;
 }
-.navbar .nav-menu {
+.container .navbar .nav-menu {
   display: flex;
 }
-.navbar .nav-menu li {
+.container .navbar .nav-menu li {
   flex: 1;
   border: 1px solid #e0e0e0;
   border-right: none;
   text-align: center;
 }
-.navbar .nav-menu li a {
+.container .navbar .nav-menu li a {
   font-size: 1.2rem;
   display: block;
   padding: 1.25rem 2rem;
   text-decoration: none;
   color: #3a4145;
 }
-.navbar .nav-menu li a:hover {
+.container .navbar .nav-menu li a:hover {
   background: #e0e0e0;
 }
-.navbar .nav-menu li:first-child {
+.container .navbar .nav-menu li:first-child {
   border-left: 1px solid #e0e0e0;
 }
-.navbar .nav-menu li:last-child {
+.container .navbar .nav-menu li:last-child {
   border-right: 1px solid #e0e0e0;
-}
-.container {
-  max-width: 800px;
-  margin: 0px auto;
 }
 .container .intro {
   display: flex;
@@ -213,4 +209,7 @@ body {
 .container .intro .intro-text div p {
   font-size: 1.4rem;
   line-height: 1.65rem;
+}
+.container .skills {
+  border: 1px solid red;
 }

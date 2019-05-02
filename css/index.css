@@ -1,1 +1,352 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 800px;
+  margin: 0px auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+.container .navbar .nav-menu {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container .navbar .nav-menu {
+    flex-direction: column;
+  }
+}
+.container .navbar .nav-menu li {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-right: none;
+  text-align: center;
+}
+.container .navbar .nav-menu li a {
+  font-size: 1.2rem;
+  display: block;
+  padding: 1.25rem 2rem;
+  text-decoration: none;
+  color: #3a4145;
+}
+.container .navbar .nav-menu li a:hover {
+  background: #e0e0e0;
+}
+.container .navbar .nav-menu li:first-child {
+  border-left: 1px solid #e0e0e0;
+}
+.container .navbar .nav-menu li:last-child {
+  border-right: 1px solid #e0e0e0;
+}
+.container .intro {
+  display: flex;
+  flex-direction: column;
+}
+.container .intro .intro-image-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.container .intro .intro-image-wrapper div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.container .intro .intro-image-wrapper div span {
+  display: block;
+  height: 1px;
+  border: 1px solid #e0e0e0;
+}
+.container .intro .intro-image-wrapper .img-div {
+  flex: 1;
+  padding: 1.5rem;
+}
+.container .intro .intro-image-wrapper .img-div img {
+  width: 100%;
+  border-radius: 50%;
+}
+.container .intro .intro-text {
+  text-align: center;
+}
+.container .intro .intro-text div {
+  width: 60%;
+  margin: 0px auto;
+}
+.container .intro .intro-text div h1 {
+  font-size: 3rem;
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+}
+.container .intro .intro-text div h3 {
+  color: #aaa;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 0.6rem auto;
+}
+.container .intro .intro-text div p {
+  font-size: 1.4rem;
+  line-height: 1.65rem;
+}
+.container .skills {
+  margin: 4rem auto;
+  padding: 4rem auto;
+  border-top: 2px dashed #3a4145;
+}
+.container .skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container .skills div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .container .skills div {
+    flex-direction: column;
+  }
+}
+.container .skills div article {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0rem 1rem;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  width: 2.5rem;
+  border-radius: 0.25rem;
+  padding: 2.5rem;
+}
+@media (max-width: 500px) {
+  .container .skills div article {
+    width: 100%;
+    display: block;
+    padding: 4rem;
+    margin-top: 1rem;
+  }
+}
+.container .skills div article .skill {
+  margin: 10px auto;
+}
+.container .skills div article .skill-experience {
+  margin-bottom: 10px;
+  color: #aaa;
+  font-style: italic;
+}
+.container .work-history {
+  margin: 4rem auto;
+  padding: 4rem auto;
+  border-top: 2px dashed #3a4145;
+}
+.container .work-history h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container .work-history table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .work-history th {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.container .work-history th,
+.container .work-history td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.container .work-history tr:hover {
+  background-color: #f5f5f5;
+}
+.container .contact {
+  margin: 4rem auto;
+  padding: 4rem auto;
+  border-top: 2px dashed #3a4145;
+}
+.container .contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.container .contact form {
+  padding: 0rem 4rem 3rem;
+  margin-bottom: 8rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .container .contact form {
+    padding: 0.5rem;
+  }
+}
+.container .contact form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .contact form div {
+  margin-top: 0.9rem;
+}
+.container .contact form div label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.container .contact form div .text-input {
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #e0e0e0;
+}
+.container .contact form div .contact-btn {
+  font-size: 1.05rem;
+  padding: 0.9rem 1.3rem;
+  border: none;
+  background: #3b5998;
+  color: white;
+  float: right;
+  border-radius: 0.2rem;
+}

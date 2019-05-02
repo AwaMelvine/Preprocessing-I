@@ -1,19 +1,172 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
 
-  <title>My Resume</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet">
 
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-</head>
+  </head>
+  <body>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+
+    <!-- Container -->
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work-history">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- // Navbar -->
+
+
+      <!-- Intro Section -->
+      <section class="intro">
+        <div class="intro-image-wrapper">
+          <div>
+            <span></span>
+          </div>
+          <div class="img-div">
+            <img src="img/melvine_profile_pic.jpg" alt="An image of Awa
+              Melvine">
+          </div>
+          <div>
+            <span></span>
+          </div>
+        </div>
+        <div class="intro-text">
+          <div>
+            <h1>Awa Melvine</h1>
+            <h3 class="role">Full Stack Software Engineer</h3>
+            <p>
+              I am a software craftsman. I have a knack for beautiful,
+              high-performant code. I have some experience developing mobile and
+              web
+              applications.
+            </p>
+          </div>
+
+        </div>
+      </section>
+      <!-- //End Intro Section -->
+
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div>
+          <article>
+            <h1 class="skill">PHP</h1>
+            <p class="skill-experience">3 Years</p>
+          </article>
+          <article>
+            <h1 class="skill">LARAVEL</h1>
+            <p class="skill-experience">2 years</p>
+          </article>
+          <article>
+            <h1 class="skill">REACT JS</h1>
+            <p class="skill-experience">1 year</p>
+          </article>
+          <article>
+            <h1 class="skill">JAVASCRIPT</h1>
+            <p class="skill-experience">1.5 years</p>
+          </article>
+        </div>
+        <div>
+          <article>
+            <h1 class="skill">PHP</h1>
+            <p class="skill-experience">3 Years</p>
+          </article>
+          <article>
+            <h1 class="skill">LARAVEL</h1>
+            <p class="skill-experience">2 years</p>
+          </article>
+          <article>
+            <h1 class="skill">REACT JS</h1>
+            <p class="skill-experience">1 year</p>
+          </article>
+          <article>
+            <h1 class="skill">JAVASCRIPT</h1>
+            <p class="skill-experience">1.5 years</p>
+          </article>
+        </div>
+      </section>
+      <!-- //End skills -->
+
+      <!-- Work History -->
+      <section class="work-history" id="work-history">
+        <h2>Work Experience</h2>
+        <table>
+          <thead>
+            <th>Years</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Tech Used</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0.9years</td>
+              <td>Go-Groups Ltd</td>
+              <td>Web Developer</td>
+              <td>PHP/Laravel</td>
+            </tr>
+
+            <tr>
+              <td>-</td>
+              <td>Andela</td>
+              <td>Software Engineer</td>
+              <td>JavaScript</td>
+            </tr>
+            <tr>
+              <td>0.9years</td>
+              <td>Go-Groups Ltd</td>
+              <td>Web Developer</td>
+              <td>PHP/Laravel</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- //End Work History -->
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h2 class="form-title">Contact</h2>
+        <form action="index.html" method="post">
+          <div>
+            <label>Email</label>
+            <input type="email" name="email" class="text-input">
+          </div>
+          <div>
+            <label>Subject</label>
+            <input type="text" name="subject" class="text-input">
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea name="message" cols="30" rows="4" class="text-input"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="contact-btn">Send</button>
+          </div>
+        </form>
+
+      </section>
+      <!-- //End Contact -->
+
+    </body>
+  </div>
+  <!-- //End Container -->
+
+
 </html>
